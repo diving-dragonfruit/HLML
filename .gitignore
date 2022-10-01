@@ -1,0 +1,8 @@
+backup
+miniimagenet
+omniglot
+.idea
+__pycache__
+scripts_rci
+compare.py
+run_compare.sh
