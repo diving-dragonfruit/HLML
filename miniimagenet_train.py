@@ -138,10 +138,14 @@ if __name__ == '__main__':
     argparser.add_argument('--p_task_2', type=float, help='percentage lists for task loop', default=1)
     argparser.add_argument('--p_task_3', type=float, help='percentage lists for task loop', default=1)
     argparser.add_argument('--p_task_4', type=float, help='percentage lists for task loop', default=1)
+    argparser.add_argument('--p_meta_1', type=float, help='percentage lists for meta loop', default=1)
+    argparser.add_argument('--p_meta_2', type=float, help='percentage lists for meta loop', default=1)
+    argparser.add_argument('--p_meta_3', type=float, help='percentage lists for meta loop', default=1)
+    argparser.add_argument('--p_meta_4', type=float, help='percentage lists for meta loop', default=1)
 
     args = argparser.parse_args()
     args.p_task = [args.p_task_1, args.p_task_2, args.p_task_3, args.p_task_4]
-    args.p_meta = [1, 1, 1, 1]
+    args.p_meta = [args.p_meta_1, args.p_meta_2, args.p_meta_3, args.p_meta_4]
 
     file_name = f'p_task={args.p_task};p_meta={args.p_meta};{args.run}th_run.json'
     print("run: ", args.run)
